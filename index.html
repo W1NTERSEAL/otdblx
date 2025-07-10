@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF‑8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Путеводитель по Воронежу</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <meta charset="UTF-8">
+  <title>Лучшие места Воронежа</title>
   <style>
-    body { margin:0; font-family:sans-serif; color:#333; background:#f9f9f9; }
-    header { background:#fff; padding:1rem; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100; }
-    nav a { margin:0 0.5rem; color:#555; text-decoration:none; }
-    main { padding:1rem; max-width:1000px; margin:auto; }
-    section { margin-bottom:2rem; background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.1); }
-    h2 { border-bottom:2px solid #eee; padding-bottom:0.5rem; }
-    .card { display:flex; flex-wrap:wrap; gap:1rem; }
-    .item { flex:1 1 calc(50% - 1rem); min-width:250px; background:#fafafa; border-radius:6px; overflow:hidden; box-shadow:0 1px 2px rgba(0,0,0,0.05); }
-    .item img { width:100%; display:block; }
-    .item div { padding:0.5rem; }
-    #map { height:400px; width:100%; border-radius:8px; margin-bottom:1rem; }
-    @media (max-width:600px){ .item { flex:1 1 100%; } }
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    .place {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Места, которые стоит посетить в Воронеже</h1>
 
-<header>
-  <h1>Путеводитель по Воронежу</h1>
-  <nav>
-    <a href="#map">Карта</a><a href="#parks">Парки</a><a href="#restaurants">Рестораны</a><a href="#cafes">Кафе</a>
-    <a href="#museums">Музеи</a><a href="#history">История</a><a href="#nature">Природа</a><a href="#beaches">Пляжи</a>
-  </nav>
-</header>
-
-<main>
-  <section id="map">
-    <h2>Карта с метками</h2>
-    <div id="map"></div>
-  </section>
-
-  <!-- Пример: Парки -->
-  <section id="parks">
-    <h2>🌳 Парки</h2>
-    <div class="card">
-      <div class="item"><img src="dolphin.jpg" alt="Дельфин"><div><strong>Парк «Дельфин»</strong><br>Набережная, лодочная пристань, спорт, детские зоны, кафе.</div></div>
-      <div class="item"><img src="alyye_parusa.jpg" alt="Алые паруса"><div><strong>Парк «Алые паруса»</strong><br>Сосны, пляж, амфитеатр, спорт, французский ландшафт.</div></div>
-      <!-- Добавьте остальные парки по аналогии -->
+    <h2>Пляжи на реках и прудах</h2>
+    <div class="place">
+      <strong>1. Пляж на окружном шоссе у реки Воронеж</strong><br>
+      Мелкий песок, тёплая вода, идеален для семейного отдыха. Расположен в 500 м от трассы М‑4 Дон (Тамтак).
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5644.306654939648!2d39.09258096767885!3d51.63814633675895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b2e9a3eb245fb%3A0x3ad30978e5dc3281!2z0J_RgNC-0YHQutCy0LAsINCf0L7Qu9C-0LLQsNGPINGD0LsuLCDQn9C-0LvQvtCz0L4g0LrQvtC70YzRiNC60LAg0L3QsCDRgdC_0L7RgNC90LjQuSDQvdCwINC30LDQstGB0YzQutC-0LPQviDRg9C7!5e0!3m2!1sru!2sru!4v1720550000000!5m2!1sru!2sru"></iframe>
     </div>
-  </section>
 
-  <!-- Остальные секции: рестораны, кафе, музеи, история, природа и пляжи -->
-  <!-- Каждая секция форматирована как выше: img, title, описание -->
-</main>
+    <div class="place">
+      <strong>2. Пляж на Усманке у «Соснового бора»</strong><br>
+      Песчаная зона почти 1 км, чистая вода, охраняемый участок с качелями и волейбольными полями.
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5642.679803646299!2d39.32892121456207!3d51.58931839293854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b2f2006f120ab%3A0x8b404e51d354b73d!2z0KHQtdC80LXQvdC-0LzQtdGC0YHRjyDQn9C-0LvQvtCz0L4g0JrRgNCw0YHRgtCy0LDRjyDQvdCwINC-0YAu!5e0!3m2!1sru!2sru!4v1720550200000!5m2!1sru!2sru"></iframe>
+    </div>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>
-  const map = L.map('map');
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap'
-  }).addTo(map);
+    <div class="place">
+      <strong>3. Чертовицкий пляж (река Воронеж, Рамонский район)</strong><br>
+      Просторный, с инфраструктурой: кабинки, душ, столики, прокат катамаранов.
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5646.982191780547!2d39.18379873927086!3d51.71654377003864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b25bd62ef3b6d%3A0x9983cf77b07e5b3!2z0KHRgtC10LrRgtC40Lkg0YbQuNC90LDRjyDRg9C7!5e0!3m2!1sru!2sru!4v1720550400000!5m2!1sru!2sru"></iframe>
+    </div>
 
-  const locations = [
-    {lat:51.657, lng:39.195, title:"Парк «Дельфин»"},
-    {lat:51.654, lng:39.205, title:"Парк «Алые паруса»"},
-    // добавьте для всех 14 парков
-    {lat:51.661, lng:39.202, title:"Олимпик‑парк"},
-    {lat:51.659, lng:39.198, title:"Парк «Танаис»"}
-  ];
+    <div class="place">
+      <strong>4. «Лимпопо» (Рамонь)</strong><br>
+      Бесплатный вход, баня, домики, волейбол, мостик в реку, красивая природа.
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5646.761259731152!2d39.2011609145622!3d51.710145892805335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b25e508f7e2a7%3A0xf87d1b392b4d1f0a!2z0JvRg9Cx0YPRgdC60Lgg0JvQuNCy0LrRgNCw0YDQvtCz!5e0!3m2!1sru!2sru!4v1720550600000!5m2!1sru!2sru"></iframe>
+    </div>
 
-  const latLngs = [];
-  locations.forEach(loc => {
-    const marker = L.marker([loc.lat, loc.lng]).addTo(map).bindPopup(loc.title);
-    latLngs.push([loc.lat, loc.lng]);
-  });
-  map.fitBounds(latLngs, { padding:[50,50] });
-</script>
-
+    <!-- Аналогично можно вставить карты и для других категорий -->
+  </div>
 </body>
 </html>
